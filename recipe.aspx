@@ -18,7 +18,7 @@
             <br /><br />
       
         
-        <asp:SqlDataSource ID="Sql_detailsview" runat="server" ConnectionString="<%$ ConnectionStrings:flick_recipes %>" DeleteCommand="DELETE FROM [flick_recipes] WHERE [recipeID] = @recipeID" InsertCommand="INSERT INTO [flick_recipes] ([name], [submitby], [ing_1], [ing_2], [ing_3], [ing_4], [ing_5], [prep], [notes]) VALUES (@name, @submitby, @ing_1, @ing_2, @ing_3, @ing_4, @ing_5, @prep, @notes)" SelectCommand="SELECT * FROM [flick_recipes]" UpdateCommand="UPDATE [flick_recipes] SET [name] = @name, [submitby] = @submitby, [ing_1] = @ing_1, [ing_2] = @ing_2, [ing_3] = @ing_3, [ing_4] = @ing_4, [ing_5] = @ing_5, [prep] = @prep, [notes] = @notes WHERE [recipeID] = @recipeID">
+        <asp:SqlDataSource ID="Sql_detailsview" runat="server" ConnectionString="<%$ ConnectionStrings:flick_recipes %>" DeleteCommand="DELETE FROM [flick_recipes] WHERE [recipeID] = @recipeID" InsertCommand="INSERT INTO [flick_recipes] ([name], [submitby], [ing_1], [ing_2], [ing_3], [ing_4], [ing_5], [prep], [notes]) VALUES (@name, @submitby, @ing_1, @ing_2, @ing_3, @ing_4, @ing_5, @prep, @notes)" SelectCommand="SELECT * FROM [flick_recipes] WHERE ([recipeID] = @recipeID)" UpdateCommand="UPDATE [flick_recipes] SET [name] = @name, [submitby] = @submitby, [ing_1] = @ing_1, [ing_2] = @ing_2, [ing_3] = @ing_3, [ing_4] = @ing_4, [ing_5] = @ing_5, [prep] = @prep, [notes] = @notes WHERE [recipeID] = @recipeID">
             <DeleteParameters>
                 <asp:Parameter Name="recipeID" Type="Int32" />
             </DeleteParameters>
@@ -33,6 +33,9 @@
                 <asp:Parameter Name="prep" Type="String" />
                 <asp:Parameter Name="notes" Type="String" />
             </InsertParameters>
+            <SelectParameters>
+                <asp:QueryStringParameter Name="recipeID" QueryStringField="recipeID" Type="Int32" />
+            </SelectParameters>
             <UpdateParameters>
                 <asp:Parameter Name="name" Type="String" />
                 <asp:Parameter Name="submitby" Type="String" />
@@ -46,6 +49,7 @@
                 <asp:Parameter Name="recipeID" Type="Int32" />
             </UpdateParameters>
         </asp:SqlDataSource>
+        <asp:Label ID="lbldelete" runat="server"></asp:Label>
         <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="recipeID" DataSourceID="Sql_detailsview" HorizontalAlign="Center" Width="352px" AllowPaging="True">
             <Fields>
                 <asp:BoundField DataField="recipeID" HeaderText="recipeID" InsertVisible="False" ReadOnly="True" SortExpression="recipeID" />
@@ -58,6 +62,7 @@
                 <asp:BoundField DataField="ing_5" HeaderText="ing_5" SortExpression="ing_5" />
                 <asp:BoundField DataField="prep" HeaderText="prep" SortExpression="prep" />
                 <asp:BoundField DataField="notes" HeaderText="notes" SortExpression="notes" />
+                <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
             </Fields>
         </asp:DetailsView>
     </form>

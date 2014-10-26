@@ -16,8 +16,7 @@
      
          <br /><a href="Default.aspx" style="color: #696969">Home</a>&nbsp; |&nbsp; <a href="newrecipe.aspx" style="color: #696969">New Recipe</a>&nbsp; |&nbsp; <a href="aboutus.aspx" style="color: #696969">About Us</a>&nbsp; |&nbsp; <a href="contactus.aspx" style="color: #696969">Contact</a>
             <br /><br />
-
-        <!-- Check to see if you are in postback.  If not, display the contact form. -->
+           <!-- Check to see if you are in postback.  If not, display the contact form. -->
         <% If Not IsPostBack Then%>
 
         Your email address:<br />
@@ -40,6 +39,8 @@
 
         <!-- End your 'If' statement. -->
         <%End If%>
+
+
     </div>
     </form>
     <br />
