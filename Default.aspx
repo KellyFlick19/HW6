@@ -60,4 +60,6 @@
         </asp:GridView>
     </form>
     <br />
+    <hr />
+
     <i class="footer">Copyright © 2014. Created by Kelly Flick</i>

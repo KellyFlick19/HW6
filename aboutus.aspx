@@ -27,6 +27,7 @@
 &nbsp;Etiam vel lorem nec justo suscipit ornare. Sed risus urna, gravida nec convallis eu, viverra nec sem. Sed eget mauris magna. Sed vulputate tortor in tempus fringilla. Donec in commodo tellus. Ut laoreet ut lectus ac vehicula. Duis velit nulla, suscipit ut urna ac, facilisis elementum sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut dui quam, imperdiet ornare est non, accumsan vulputate justo. Vestibulum sit amet erat a nunc consectetur pellentesque. Aenean imperdiet tellus nec augue eleifend condimentum.<br />
 
      <br />
+    <hr />
     <i class="footer">Copyright © 2014. Created by Kelly Flick.</i>
 </body>
 </html>
