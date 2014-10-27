@@ -46,7 +46,7 @@
                 <asp:Parameter Name="recipeID" Type="Int32" />
             </UpdateParameters>
         </asp:SqlDataSource>
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="recipeID" DataSourceID="SqlDataSource1" Width="352px" AllowPaging="True" AllowSorting="True" HorizontalAlign="Center" BackImageUrl="#696969">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="recipeID" DataSourceID="SqlDataSource1" Width="360px" AllowPaging="True" AllowSorting="True" HorizontalAlign="Center" BackImageUrl="#696969">
             <Columns>
                 <asp:BoundField DataField="name" HeaderText="Recipe Name" SortExpression="name" />
                 <asp:BoundField DataField="submitby" HeaderText="Submitted by" SortExpression="submitby" />

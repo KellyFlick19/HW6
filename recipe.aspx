@@ -50,20 +50,20 @@
             </UpdateParameters>
         </asp:SqlDataSource>
         <asp:Label ID="lbldelete" runat="server"></asp:Label>
-        <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="recipeID" DataSourceID="Sql_detailsview" HorizontalAlign="Center" Width="352px" AllowPaging="True" HeaderText="Selected Recipe">
+        <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="recipeID" DataSourceID="Sql_detailsview" HorizontalAlign="Center" Width="360px" AllowPaging="True" HeaderText="Selected Recipe">
              <CommandRowStyle BackColor="LightCoral" Font-Bold="True" />
             <EditRowStyle BackColor="LightCoral" />
             <FieldHeaderStyle BackColor="#FFFF99" Font-Bold="True" />
 
             <Fields>
-                <asp:BoundField DataField="name" HeaderText="Recipe Name" SortExpression="name" />
-                <asp:BoundField DataField="submitby" HeaderText="Submitted By" SortExpression="submitby" />
-                <asp:BoundField DataField="ing_1" HeaderText="Ingredient 1" SortExpression="ing_1" />
+                <asp:BoundField DataField="name" HeaderText="Recipe Name*" SortExpression="name" />
+                <asp:BoundField DataField="submitby" HeaderText="Submitted By*" SortExpression="submitby" />
+                <asp:BoundField DataField="ing_1" HeaderText="Ingredient 1*" SortExpression="ing_1" />
                 <asp:BoundField DataField="ing_2" HeaderText="Ingredient 2" SortExpression="ing_2" />
                 <asp:BoundField DataField="ing_3" HeaderText="Ingredient 3" SortExpression="ing_3" />
                 <asp:BoundField DataField="ing_4" HeaderText="Ingredient 4" SortExpression="ing_4" />
                 <asp:BoundField DataField="ing_5" HeaderText="Ingredient 5" SortExpression="ing_5" />
-                <asp:BoundField DataField="prep" HeaderText="Preparation" SortExpression="prep" />
+                <asp:BoundField DataField="prep" HeaderText="Preparation*" SortExpression="prep" />
                 <asp:BoundField DataField="notes" HeaderText="Notes" SortExpression="notes" />
                 <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" >
                 <ControlStyle ForeColor="DimGray" />

@@ -46,19 +46,19 @@
                 <asp:Parameter Name="recipeID" Type="Int32" />
             </UpdateParameters>
         </asp:SqlDataSource>
-        <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="recipeID" DataSourceID="SqlDataSource1" DefaultMode="Insert" Height="50px" HorizontalAlign="Center" Width="296px">
+        <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" DataKeyNames="recipeID" DataSourceID="SqlDataSource1" DefaultMode="Insert" Height="76px" HorizontalAlign="Center" Width="360px" style="margin-top: 0px">
             <CommandRowStyle BackColor="LightCoral" Font-Bold="True" />
             <EditRowStyle BackColor="LightCoral" />
             <FieldHeaderStyle BackColor="#FFFF99" Font-Bold="True" />
             <Fields>
-                <asp:BoundField DataField="name" HeaderText="Name" SortExpression="name" />
-                <asp:BoundField DataField="submitby" HeaderText="Submitted By" SortExpression="submitby" />
-                <asp:BoundField DataField="ing_1" HeaderText="Ingredient 1" SortExpression="ing_1" />
+                <asp:BoundField DataField="name" HeaderText="Recipe Name*" SortExpression="name" />
+                <asp:BoundField DataField="submitby" HeaderText="Submitted By*" SortExpression="submitby" />
+                <asp:BoundField DataField="ing_1" HeaderText="Ingredient 1*" SortExpression="ing_1" />
                 <asp:BoundField DataField="ing_2" HeaderText="Ingredient 2" SortExpression="ing_2" />
                 <asp:BoundField DataField="ing_3" HeaderText="Ingredient 3" SortExpression="ing_3" />
                 <asp:BoundField DataField="ing_4" HeaderText="Ingredient 4" SortExpression="ing_4" />
                 <asp:BoundField DataField="ing_5" HeaderText="Ingredient 5" SortExpression="ing_5" />
-                <asp:BoundField DataField="prep" HeaderText="Preparation" SortExpression="prep" />
+                <asp:BoundField DataField="prep" HeaderText="Preparation*" SortExpression="prep" />
                 <asp:BoundField DataField="notes" HeaderText="Notes" SortExpression="notes" />
                 <asp:CommandField ShowInsertButton="True" >
                 <ControlStyle ForeColor="DimGray" />
