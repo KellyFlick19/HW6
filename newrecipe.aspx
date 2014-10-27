@@ -51,16 +51,15 @@
             <EditRowStyle BackColor="LightCoral" />
             <FieldHeaderStyle BackColor="#FFFF99" Font-Bold="True" />
             <Fields>
-                <asp:BoundField DataField="recipeID" HeaderText="recipeID" InsertVisible="False" ReadOnly="True" SortExpression="recipeID" />
-                <asp:BoundField DataField="name" HeaderText="name" SortExpression="name" />
-                <asp:BoundField DataField="submitby" HeaderText="submitby" SortExpression="submitby" />
-                <asp:BoundField DataField="ing_1" HeaderText="ing_1" SortExpression="ing_1" />
-                <asp:BoundField DataField="ing_2" HeaderText="ing_2" SortExpression="ing_2" />
-                <asp:BoundField DataField="ing_3" HeaderText="ing_3" SortExpression="ing_3" />
-                <asp:BoundField DataField="ing_4" HeaderText="ing_4" SortExpression="ing_4" />
-                <asp:BoundField DataField="ing_5" HeaderText="ing_5" SortExpression="ing_5" />
-                <asp:BoundField DataField="prep" HeaderText="prep" SortExpression="prep" />
-                <asp:BoundField DataField="notes" HeaderText="notes" SortExpression="notes" />
+                <asp:BoundField DataField="name" HeaderText="Name" SortExpression="name" />
+                <asp:BoundField DataField="submitby" HeaderText="Submitted By" SortExpression="submitby" />
+                <asp:BoundField DataField="ing_1" HeaderText="Ingredient 1" SortExpression="ing_1" />
+                <asp:BoundField DataField="ing_2" HeaderText="Ingredient 2" SortExpression="ing_2" />
+                <asp:BoundField DataField="ing_3" HeaderText="Ingredient 3" SortExpression="ing_3" />
+                <asp:BoundField DataField="ing_4" HeaderText="Ingredient 4" SortExpression="ing_4" />
+                <asp:BoundField DataField="ing_5" HeaderText="Ingredient 5" SortExpression="ing_5" />
+                <asp:BoundField DataField="prep" HeaderText="Preparation" SortExpression="prep" />
+                <asp:BoundField DataField="notes" HeaderText="Notes" SortExpression="notes" />
                 <asp:CommandField ShowInsertButton="True" >
                 <ControlStyle ForeColor="DimGray" />
                 </asp:CommandField>
