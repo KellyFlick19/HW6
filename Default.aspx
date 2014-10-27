@@ -46,16 +46,18 @@
                 <asp:Parameter Name="recipeID" Type="Int32" />
             </UpdateParameters>
         </asp:SqlDataSource>
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="recipeID" DataSourceID="SqlDataSource1" Width="352px" AllowPaging="True" AllowSorting="True" HorizontalAlign="Center">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="recipeID" DataSourceID="SqlDataSource1" Width="352px" AllowPaging="True" AllowSorting="True" HorizontalAlign="Center" BackImageUrl="#696969">
             <Columns>
                 <asp:BoundField DataField="name" HeaderText="Recipe Name" SortExpression="name" />
                 <asp:BoundField DataField="submitby" HeaderText="Submitted by" SortExpression="submitby" />
-                <asp:HyperLinkField DataNavigateUrlFields="recipeID" DataNavigateUrlFormatString="recipe.aspx?recipeID={0}" Text="Select" />
+                <asp:HyperLinkField DataNavigateUrlFields="recipeID" DataNavigateUrlFormatString="recipe.aspx?recipeID={0}" Text="Select" >
+                <ControlStyle ForeColor="DimGray" />
+                </asp:HyperLinkField>
             </Columns>
+            <EditRowStyle BackColor="LightCoral" BorderColor="White"  />
+            <HeaderStyle BackColor="#FFFF99"  ForeColor="DimGray" />
+            <RowStyle BackColor="LightCoral"  ForeColor="White" />
         </asp:GridView>
     </form>
     <br />
-    <i class="footer">Copyright © 2014. Created by Kelly Flick.</i>
-  
-</body>
-</html>
+    <i class="footer">Copyright © 2014. Created by Kelly Flick</i>
